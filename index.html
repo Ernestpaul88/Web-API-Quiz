@@ -14,6 +14,27 @@
     />
 </head>
 <body>
+    <div class="container-fluid">
+        <!-- display view highscores line and the timer -->
+      <div class="row">
+        <!-- view highscores link -->
+        <div class="col">
+          <a href="#" id="viewHighScore">View High Scores</a>
+        </div>
+
+        <!-- The timer -->
+        <div id="timer" class="col" style="display: none">
+          <i class="far fa-clock"></i> Time:
+          <span id="timeLeft"></span>
+        </div>
+
+        <!-- times up -->
+        <div id="timesUp" class="col text-right" style="display: none">
+          Time's Up!
+        </div>
+      </div>
+    </div>
+      <!-- display view highscores line and the timer -->
      <!-- Vendor JS Files -->
      <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
