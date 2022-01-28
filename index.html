@@ -53,6 +53,45 @@
               Start Quiz
             </button>
           </div>
+
+          <!-- Quiz questions container -->
+          <div class="pl-5 ml-2 pt-5" id="quiz" style="display: none"></div>
+        
+                 <!-- displays the users final score -->
+                 <div class="pl-5 ml-2 pt-5 justify-content-center"
+                 id="summary"
+                 style="display: none">
+                 <div class="col-2"></div>
+                 <div class="col-8">
+                   <h2 class="fw-bold pt-2 pb-3 m-2">All Done!</h2>
+                   <p>
+                     Your final score is
+                     <span id="finalScore">0</span>
+                   </p>
+        
+                   <form>
+                     <p class="pt-2 pb-3 m-2">
+                       Enter your initials:
+                       <input
+                         id="initialInput"
+                         class="form-control pt-2 pb-3 mt-2"
+                         type="text"
+                       />
+                       <button
+                         id="submitInitialBtn"
+                         class="btn btn-quiz mt-3"
+                         type="button"
+                       >
+                         Submit
+                       </button>
+                     </p>
+                   </form>
+                 </div>
+                 <div class="col-2"></div>
+               </div>
+               <!-- User Results  -->
+               <div id="results" style="display: none"></div>
+        
         </div>
       </div>
     </div>
