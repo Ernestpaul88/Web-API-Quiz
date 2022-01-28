@@ -254,7 +254,7 @@ function showResults(correct) {
 
 // New Quiz Generate
 function newQuiz() {
-  timer.style.display = "none";
+  timer.style.display = "block";
   timesUp.style.display = "none";
   highscoreSection.style.display = "none";
   scoresCleared.style.display = "none";
@@ -290,14 +290,11 @@ function storeHighscore() {
   };
 
   // Save score and push it to scores array
-  scoreDataObj.id = scoreIdCounter;
+  scoreDataObj.id = scores.length + 1;
 
   scores.push(scoreDataObj);
   // save scores to localStorage
   localStorage.setItem("scores", JSON.stringify(scores));
-
-  // increase score counter for next unique score id
-  scoreIdCounter++;
 
   showHighscores();
 }
@@ -351,7 +348,6 @@ function showHighscores() {
 clearHighScoreBtn.addEventListener("click", function () {
   localStorage.removeItem("scores");
   scores = [];
-  scoreIdCounter = 1;
   scoresListEl.innerHTML = "";
   scoresCleared.style.display = "block";
 });
