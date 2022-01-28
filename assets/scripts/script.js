@@ -58,3 +58,49 @@ var myQuestions = [
     correctAnswer: 4,
   },
 ];
+
+var startDiv = document.querySelector("#start");
+var quizContainer = document.querySelector("#quiz");
+var resultsContainer = document.querySelector("#results");
+var finalScore = document.querySelector("#finalScore");
+var scoreSummary = document.querySelector("#summary");
+var submitButton;
+var submitInitials = document.querySelector("#submitInitialBtn");
+var initialsInput = document.querySelector("#initialInput");
+var startButton = document.querySelector("#start-quiz-button");
+var timeLeft = document.querySelector("#timeLeft");
+var timer = document.querySelector("#timer");
+var clearScoresbtn = document.querySelector("#clearHighScoreBtn");
+var goBackBtn = document.querySelector("#goBackBtn");
+var highscoreContainer = document.querySelector("#listOfHighScores");
+var highscoreSection = document.querySelector("#highScoreSection");
+var scoresListEl = document.querySelector(".score-list");
+var scoresCleared = document.querySelector("#score-cleard");
+
+var viewHighscore = document.querySelector("#viewHighScore");
+var slides;
+var currentSlide = 0;
+var numCorrect = 0;
+var calcScore;
+var scoreIdCounter = 1;
+var scores = [];
+var counter;
+var timeValue;
+
+// Start the Quiz
+function startQuiz() {}
+
+// New Quiz Generate
+function newQuiz() {}
+
+// Stores Highscores
+function storeHighscore() {}
+
+// Show Highscores 
+function showHighscores() {}
+
+
+viewHighscore.addEventListener("click", showHighscores);
+submitInitials.addEventListener("click", storeHighscore);
+startButton.addEventListener("click", startQuiz);
+goBackBtn.addEventListener("click", newQuiz);
