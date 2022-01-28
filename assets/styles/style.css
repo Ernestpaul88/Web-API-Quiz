@@ -8,6 +8,15 @@ a {
   background-color: #570457 !important;
 }
 
+.score-list {
+  list-style: none;
+  text-align: left !important;
+}
+
+.list-group {
+  align-items: center;
+}
+
 #timer {
   text-align: right !important;
 }
