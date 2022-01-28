@@ -3,6 +3,10 @@ a {
   text-decoration: none !important;
 }
 
+.btn-quiz {
+  color: #fff !important;
+  background-color: #570457 !important;
+}
 
 #timer {
   text-align: right !important;
