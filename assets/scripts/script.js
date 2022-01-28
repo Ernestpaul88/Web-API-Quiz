@@ -264,6 +264,14 @@ function newQuiz() {
   calcScore = 0;
 }
 
+// Load empty Array or Get Scores
+function loadScores() {
+  scores = JSON.parse(localStorage.getItem("scores"));
+  if (!scores) {
+    scores = []
+  }
+}
+
 // Stores Highscores in local storage
 function storeHighscore() {
   var initials = initialsInput.value;
@@ -347,6 +355,8 @@ clearHighScoreBtn.addEventListener("click", function () {
   scoresListEl.innerHTML = "";
   scoresCleared.style.display = "block";
 });
+
+loadScores();
 
 viewHighscore.addEventListener("click", showHighscores);
 submitInitials.addEventListener("click", storeHighscore);
